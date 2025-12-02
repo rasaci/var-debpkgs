@@ -190,6 +190,24 @@ Description: Linux kernel headers for 6.1.83-k3-var4+ffa98df23e306bf45b8bc41e538
  This package provides kernel header files for 6.1.83-k3-var4+ffa98df23e306bf45b8bc41e538c9c00f32f7da6-1 on arm64.
  This is useful for people who need to build external modules.
 
+Package: linux-headers-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Architecture: arm64
+Maintainer: Rafael Gonzalez <ra.gonzalez@saci.es>
+Installed-Size: 49968
+Filename: ./pool/bookworm/l/linux-headers-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_arm64.deb
+Size: 8241332
+MD5sum: 8346300dc24c36e83c817c0e33914c36
+SHA1: 287b2c4fa486c6d436089bee035cf0e3b48c86c9
+SHA256: 608ebef704dc478ad5460409fe50e68f11c978d65fa90ddbc551a99077a86b61
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1 on arm64
+ This package provides kernel header files for 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1 on arm64.
+ This is useful for people who need to build external modules.
+
 Package: linux-image-6.1.46+940fab2b81d2867133444eed01ba1b20c294965d
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -409,6 +427,43 @@ Description: Linux kernel debugging symbols for 6.1.83-k3-var4+ffa98df23e306bf45
  This package will come in handy if you need to debug the kernel. It provides
  all the necessary debug symbols for the kernel and its modules.
 
+Package: linux-image-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Architecture: arm64
+Maintainer: Rafael Gonzalez <ra.gonzalez@saci.es>
+Installed-Size: 43857
+Depends: linux-headers-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_arm64.deb
+Size: 15257920
+MD5sum: 4936c517aa2e87cf581cbb7b448a9c3e
+SHA1: 315104753b78cc9ce7f9ac7fc11d39d3cb6e43c7
+SHA256: bbc7bbdc01e6bf6741c5cd8eb567401ba9f2c667c4e2f9824164320aea1851f0
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+ This package contains the Linux kernel, modules, and corresponding other
+ files, version: 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1.
+
+Package: linux-image-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1-dbg
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Architecture: arm64
+Maintainer: Rafael Gonzalez <ra.gonzalez@saci.es>
+Installed-Size: 207124
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1-dbg_6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_arm64.deb
+Size: 47912704
+MD5sum: 250a7cdf624f38c70cd7cbbfe3655fbd
+SHA1: fa86f9580129cf30e56f83d9a5fd8dedebcd086d
+SHA256: 013de225b819ef201da76ee8f8c952e8ee4dada65b883b1f9028156db5d43658
+Section: debug
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel debugging symbols for 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+ This package will come in handy if you need to debug the kernel. It provides
+ all the necessary debug symbols for the kernel and its modules.
+
 Package: linux-libc-dev
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -521,6 +576,26 @@ Size: 1253096
 MD5sum: b1ffa83b03e859eb89ca0d0438697e4e
 SHA1: 6340361b7bc793c022f486bed02acabebf6061c7
 SHA256: ce8924a11b741b84b2ad01388397c8c371d7118f2fbcbe17117dc633e0f5d714
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1
+Architecture: arm64
+Maintainer: Rafael Gonzalez <ra.gonzalez@saci.es>
+Installed-Size: 6503
+Provides: linux-kernel-headers
+Filename: ./pool/bookworm/l/linux-libc-dev_6.1.83-k3-var6+c7ca748c1b4b947b0858622774539dfcb234b024-1_arm64.deb
+Size: 1253128
+MD5sum: 2a8101760bfdb4f9c81a9e58ce8fc25f
+SHA1: 8f38d5cfc3351e6a104a4536499acc8952481612
+SHA256: 1e00a558ea93279786914d79f5026e3dbf06b8a955aaf74376dc6631b2caf029
 Section: devel
 Priority: optional
 Multi-Arch: same
